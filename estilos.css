@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Farsan&display=swap');
+body{
+    background: linear-gradient(to right,#F7D358, #F7D358);
+}
+
+
+
+header img{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    left: 40px;
+    top: 40px;
+
+}
+
+.mensaje{
+    font-family: 'Farsan', cursive;
+    position: absolute;
+    background: none;
+    width: 577px;
+    height: 48px;
+    left: 240px;
+    top: 168px;
+    border: darkorange;
+    outline: darkorange;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.caja{
+    position: absolute;
+    width: 380px;
+    height: 550px;
+    top: 40px;
+    right: 40px;
+    bottom: 40px;
+    background: #FFFFFF;
+    border-radius: 32px;
+}
+
+#imagen1{
+    position: absolute;
+    width: 60%;
+    top: 120px;
+    left: 25%;
+    background-image: none;
+    background-color: transparent;
+}
+
+.aviso{
+    position: absolute;
+    width: 250px;
+    font-family: 'Farsan', cursive;
+    top: 360px;
+    left: 17.5%;
+    text-align: center;
+}
+
+.aviso #aviso_1{
+    font-size: 24px;
+}
+
+.aviso #aviso_2{
+    font-size: 20px;
+    color: #013ADF;
+
+}
+
+#salida{
+    outline: none;
+    border: none;
+    width: 90%;
+    height: 60%;
+    resize: none;
+    background: #ffffff;
+    position: absolute;
+    top: 10%;
+    margin: 16px;
+    font-size: 24px;
+    font-family: "Farsan", cursive;
+    color: #0040FF;
+}
+
+#copiarTexto{
+    position: absolute;
+    border: darkblue;
+    bottom: 0px;
+    font-size: 20px;
+    font-family: "Farsan", cursive;
+    background: #000000;
+    color: #FFFFFF;
+    width: 100%;
+    height: 50px;
+    border-radius: 0 0 32px 32px;
+}
+
+#copiarTexto:hover{
+    background: #000000;
+    color: whitesmoke;
+    animation: animacionBotones 0.5s ease 0.5s 1 normal forwards;
+}
+
+
+
+.botones{
+    display: flex;
+    position: absolute;
+    width: 600px;
+    height: 70px;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 50px;
+    left: 250px;
+    bottom: 68px;
+}
+
+.exclamacion{
+    position: absolute;
+    color: #ffffff;
+    width: 15px;
+    bottom: 135px;
+    left: 245px;
+    background: #414141;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.texto{
+    position: absolute;
+    color: #414141; 
+    bottom: 135px;
+    left: 265px;
+}
+
+.bottones{
+    width: 40%;
+    height: 80%;
+    border-radius: 24px;
+    border: 0px solid orange;
+}
+
+#boton1{
+    background: #FE642E;
+    color: white;
+    box-shadow: 3px 3px 15px 5px #1a2736;
+}
+
+#boton1:hover{
+    background: #FE642E;
+    color: black;
+    animation: animacionBotones 1s ease 0s 1 normal forwards;
+}
+
+
+
+#boton2{
+    background: #B40404;
+    color: white;
+    box-shadow: 3px 3px 15px 5px #1a2736;
+}
+
+#boton2:hover{
+    background: #B40404;
+    color: black;
+    animation: animacionBotones 1s ease 0s 1 normal forwards;
+}
+
+footer p{
+    position: absolute;
+    bottom: 10px;
+    color: #000000;
+    font-size: 11px;
+    left: 25%;
+    text-align: center;
+}
+
+
+
+@media (max-width:1230px){
+    
+    .mensaje{
+        top: 10px;
+    }
+
+    .caja{
+        top: 120px;
+        left: 240px;
+        
+    }
+
+    .botones{
+        flex-direction: column;
+        top: 180px;
+        left: 640px;
+        height: 80px;
+    }
+
+    .exclamacion{
+        top: 280px;
+        left: 640px;
+        height: fit-content;
+    }
+
+    .texto{
+        top: 280px;
+        left: 660px;
+        
+    }
+
+}
+
+@keyframes animacionBotones{
+    0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes botonActivado {
+	0% {
+		opacity: 0.8;
+		transform: scale(0.2);
+	}
+
+	80% {
+		opacity: 0;
+		transform: scale(1.2);
+	}
+
+	100% {
+		opacity: 0;
+		transform: scale(2.2);
+	}
+}

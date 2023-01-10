@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type= "text/css" href="estilos.css" media="screen">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <img src="Logo.png">
+    </header>
+    <main>
+        <input type="text" id="mensaje" class="mensaje" placeholder="Ingrese el texto aquí">
+        <div class="caja">
+            <textarea name="mensaje_final" id="salida" disabled></textarea>
+            <img src="" id="imagen1">
+            <div class="aviso">
+                <P id="aviso_1"></P>
+                <p id="aviso_2"></p>
+            </div>
+            <button type="button" id="copiarTexto">Copiar texto</button>
+        </div>
+        <p class="exclamacion">!</p>
+        <p class="texto">Solo letras minúsculas y sin acentos</p>
+        <div class="botones">
+            
+            <button class="botonS" id="boton1">Encriptar</button>
+            <button class="botonS" id="boton2">Desencriptar</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;Copyright López Hurtado Paola A. | Challenge Alura LATAM - ONE</p>
+    </footer>
+    <script src="cifrado.js"></script>
+</body>
+</html>
